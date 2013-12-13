@@ -17,12 +17,13 @@ ActiveRecord::Schema.define(version: 20131212163312) do
   enable_extension "plpgsql"
 
   create_table "town_health_records", force: true do |t|
-    t.string   "Geography"
+    t.string   "geography"
     t.integer  "total_pop"
     t.integer  "age_0_19"
     t.integer  "age_65_plus"
     t.integer  "per_capita_income"
     t.float    "persons_living_below_200_poverty"
+    t.float    "percent_persons_living_below_200_poverty"
     t.float    "adequacy_prenatal_care"
     t.float    "c_section_deliveries"
     t.integer  "infant_deaths"
